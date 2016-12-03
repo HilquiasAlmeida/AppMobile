@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Phonegap - S.I.</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> 
+		<script src="js/jquery.min.js"></script> 
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/Controller.js"></script>
+		<script src="phonegap.js"></script> 
+	</head>
+    <body>
+		<div data-role="page">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>Phonegap - S.I.</h1>
+				<a href="#outside" data-icon="bars" data-iconpos="notext">Menu</a>
+			</div><!-- /header -->
+			<!-- Busca com JS -->
+			<div role="main" class="ui-content">
+			    <input type="search" name="busca" id="search" value="" placeholder="Busca...">
+	            <strong id="quantidade"></strong>
+			        <div data-role="tabs" id="tabs">
+					  <div data-role="navbar">
+					    <ul>
+					      <li><a href="#listaA" data-ajax="false">Lista A</a></li>
+					      <li><a href="#listaB" data-ajax="false">Lista B</a></li>
+					      <li><a href="#listaC" data-ajax="false">Lista C</a></li>
+					      		      
+					    </ul>
+					  </div>
+					  <div id="listaA" class="ui-body-d ui-content">
+					    <h1>Lista A</h1>
+					    <ul id="saidaTxt" data-role="listview" data-inset="true">
+					    	<li><a href="#">Item 1 - Lista B</a></li>
+					        <li><a href="#">Item 2 - Lista B</a></li>
+					        <li><a href="#">Item 3 - Lista B</a></li>
+					        <li><a href="#">Item 4 - Lista B</a></li>
+					        <li><a href="#">Item 5 - Lista B</a></li> 
+					    </ul>
+					  </div>
+					  <div id="listaB">
+					  	<h1>Lista B</h1>
+					    <ul id="saidaTxt" data-role="listview" data-inset="true">
+					        <li><a href="#">Item 1 - Lista B</a></li>
+					        <li><a href="#">Item 2 - Lista B</a></li>
+					        <li><a href="#">Item 3 - Lista B</a></li>
+					        <li><a href="#">Item 4 - Lista B</a></li>
+					        <li><a href="#">Item 5 - Lista B</a></li>  
+					    </ul>
+					  </div>
+					   <div id="listaC">
+					   	<h1>Lista C</h1>
+					    <ul data-role="listview" data-inset="true">
+					        <li><a href="#">Item 1 - Lista C</a></li>
+					        <li><a href="#">Item 2 - Lista C</a></li>
+					        <li><a href="#">Item 3 - Lista C</a></li>
+					        <li><a href="#">Item 4 - Lista C</a></li>
+					        <li><a href="#">Item 5 - Lista C</a></li>
+					    </ul>
+					  </div>
+					</div>
+				</div><!-- /content -->
+			<div data-role="footer">
+				<h4>Phonegap - S.I.</h4>
+			</div><!-- /footer -->
+	        <div data-role="panel" id="outside" data-theme="b">
+	            <ul data-role="listview">
+	                <li data-icon="back"><a href="#" data-rel="close">Fechar</a></li>
+	                <li><a href="index.html" data-ajax="false">Home</a></li>
+	                <li><a href="home.html" data-ajax="false">Pagina A</li>
+	                <li><a href="home.html" data-ajax="false">Pagina B</li>
+	                <li><a href="home.html" data-ajax="false">Sobre</li>
+	            </ul>
+	        </div><!-- /Menu Lateral -->
+		</div><!-- /page -->
+    </body>
+</html>
